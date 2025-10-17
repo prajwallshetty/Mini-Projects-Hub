@@ -18,7 +18,7 @@ Whether you're a **beginner** or a **pro**, there’s something valuable for eve
 2️⃣ **Clone your Fork** →
 
 ```bash
-git clone https://github.com/<prajwallshetty>/Mini-Projects-Hub.git
+git clone https://github.com/prajwallshetty/Mini-Projects-Hub.git
 ```
 
 3️⃣ **Create a New Branch** →
