@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        /* CSS for the Calculator */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .calculator {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        #display {
+            width: 100%;
+            height: 60px;
+            font-size: 2em;
+            text-align: right;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            background-color: #eee;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        button {
+            padding: 15px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #e0e0e0;
+            transition: background-color 0.1s;
+        }
+
+        button:hover {
+            background-color: #d0d0d0;
+        }
+
+        .operator {
+            background-color: #ff9500;
+            color: white;
+        }
+
+        .operator:hover {
+            background-color: #e08c00;
+        }
+
+        .equals {
+            grid-column: span 2; /* Make the equals button span two columns */
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .equals:hover {
+            background-color: #45a049;
+        }
+
+        .clear {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .clear:hover {
+            background-color: #e53935;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button class="clear" onclick="clearDisplay()">AC</button>
+            <button onclick="appendToDisplay('/')" class="operator">/</button>
+            <button onclick="appendToDisplay('*')" class="operator">*</button>
+            <button onclick="appendToDisplay('7')">7</button>
+
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('-')" class="operator">-</button>
+            <button onclick="appendToDisplay('4')">4</button>
+
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('+')" class="operator">+</button>
+            <button onclick="appendToDisplay('1')">1</button>
+
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="calculate()" class="equals">=</button>
+            <button onclick="appendToDisplay('0')">0</button>
+
+            <button onclick="appendToDisplay('.')">.</button>
+            
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for the Calculator Logic
+        const display = document.getElementById('display');
+
+        /**
+         * Appends the button value to the display.
+         * @param {string} value - The character/value to append.
+         */
+        function appendToDisplay(value) {
+            display.value += value;
+        }
+
+        /**
+         * Clears the display.
+         */
+        function clearDisplay() {
+            display.value = '';
+        }
+
+        /**
+         * Calculates the result of the expression in the display.
+         */
+        function calculate() {
+            try {
+                // Use eval() to calculate the expression. 
+                // Note: While simple for this example, eval() can be dangerous in production apps.
+                // For a robust app, use a safer math parsing library or custom logic.
+                let result = eval(display.value);
+                display.value = result;
+            } catch (error) {
+                display.value = 'Error';
+            }
+        }
+    </script>
+</body>
+</html>
