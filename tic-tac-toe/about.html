@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body class="body">
+    <div class="about-div">
+        <h2 class="about-head">TIC TAC TOE</h2>
+        <div class="para-div">
+            <p>
+                <strong class="para-headings">Created by CHETHAN C MALLI</strong> <br>
+                BE AIML Student at AJIET <br>
+                 <br>
+                <strong>Graphics</strong>  :- CHETHAN C MALLI<br>
+                <strong>Developed using</strong>:- <br> 
+                          <ul class="languages-used">
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                          </ul>
+            </p>
+            <p>
+                <strong>Version</strong>:-  00989283  <br>
+                <strong>Release Date</strong>:-  05/08/2025<br>  
+                <br>
+                Copyright © 2025 CHETHAN C MALLI  All rights reserved.  
+                <br><br>
+                <strong class="para-headings">Contact Information :</strong>
+                <br>
+                <strong>Phone No</strong>:- 9483606519 <br>
+                <a href="chethumalli13@gmail.com">mail</a>
+            </p>
+
+        </div>
+        <button class="about-back-button">BACK</button>
+        <script>
+            var aboutBackbtn = document.querySelector(".about-back-button").addEventListener('click',()=>{
+                window.location.href = "index.html";
+            })
+            window.addEventListener("load", () => {
+                const bgm = new Audio("Assets/BGM.mp3");
+                bgm.play();
+                bgm.loop = true;
+
+            })
+        </script>
+    </div>
+</body>
+</html>

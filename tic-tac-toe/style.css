@@ -1,0 +1,132 @@
+
+/* FIRST PAGE */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url("https://i.pinimg.com/originals/ce/6f/7f/ce6f7ffd885e477efa2110437ab779dd.gif");
+    text-align: center;
+    font-family: 'roboto';
+    overflow: hidden;
+}
+
+.main-head{
+    margin-top: 5.5%;
+    font-size: 5em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    margin-top: 1%;
+    display: flex;
+    margin-left: 75%;
+}
+
+nav a{
+    font-family: 'roboto', sans-serif;
+    font-size: 1em;
+    padding: 1em;
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-shadow: 3px 3px 2px rgb(48, 48, 48);
+    transition: text-shadow 0.3s;
+}
+
+.start-game{
+    margin-top: 4.5%;
+    border: 0px;
+    width: 220px;
+    border-radius: 2px;
+    height: 50px;
+    background-color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #FF4C4C;
+}
+
+.start-game:hover{
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s , box-shadow 0.3s;
+    box-shadow: #a05555 4px 3px 2px;
+}
+
+.big-dino{
+    margin-top: 1%;
+}
+
+
+
+@media all and (max-width:700px){
+    
+    nav a{
+        font-family: 'roboto', sans-serif;
+        font-size: 1em;
+        padding-top: 1em;
+        padding-left: 0em;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    nav{
+        margin-top: 1%;
+        display: flex;
+        margin-left: 52%;
+    }
+    .main-head{
+        margin-top: 30.5%;
+    }
+    .big-dino{
+        margin-top: 25%;
+    }
+}
+
+@media all and (max-width:450px){
+    .main-head{
+        margin-top: 20.5%;
+    }
+
+}
+
+@media all and (max-width:450px){
+    body{
+        overflow: hidden;
+    }
+    nav a{
+        font-family: 'roboto', sans-serif;
+        font-size: 0.9em;
+        padding-top: 1em;
+        padding-left: 0em;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .main-head{
+        margin-top: 40.5%;
+    }
+}
+
+@media all and (min-width:1439px){
+    body{
+        overflow: hidden;
+    }
+    nav a{
+        font-family: 'roboto', sans-serif;
+        font-size: 2em;
+        padding-top: 1em;
+        padding-left: 0em;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .main-head{
+        margin-top: 10.5%;
+    }
+}
