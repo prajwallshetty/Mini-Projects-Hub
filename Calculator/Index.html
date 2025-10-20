@@ -17,6 +17,137 @@
             margin: 0;
         }
         
+                :root {
+            --bg: #f4f4f4;
+            --text: #222;
+            --card-bg: #fff;
+            --display-bg: #eee;
+            --button-bg: #e0e0e0;
+            --button-hover: #d0d0d0;
+            --operator-bg: #ff9500;
+            --operator-hover: #e08c00;
+            --equals-bg: #4CAF50;
+            --equals-hover: #45a049;
+            --clear-bg: #f44336;
+            --clear-hover: #e53935;
+            --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            --accent-text: white;
+            --transition: 200ms ease;
+        }
+
+        /* Dark theme variable overrides applied when body has .dark-theme */
+        body.dark-theme {
+            --bg: #0f1416;
+            --text: #e6eef0;
+            --card-bg: #171a1c;
+            --display-bg: #0e1112;
+            --button-bg: #1f2426;
+            --button-hover: #2a3032;
+            --operator-bg: #ff9f43;
+            --operator-hover: #e08c00;
+            --equals-bg: #2e7d32;
+            --equals-hover: #27632a;
+            --clear-bg: #b71c1c;
+            --clear-hover: #a31a1a;
+            --shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+            --accent-text: #ffffff;
+        }
+
+        /* Smooth transitions for theme changes */
+        body,
+        .calculator,
+        #display,
+        button {
+            transition: background-color var(--transition), color var(--transition), box-shadow var(--transition);
+        }
+
+        /* Apply variable-driven colors when dark theme is active */
+        body.dark-theme {
+            background-color: var(--bg);
+            color: var(--text);
+        }
+
+        /* More specific selectors to override existing rules when dark theme is active */
+        body.dark-theme .calculator {
+            background-color: var(--card-bg);
+            box-shadow: var(--shadow);
+            color: var(--text);
+        }
+
+        body.dark-theme #display {
+            background-color: var(--display-bg);
+            color: var(--text);
+            border-color: rgba(255,255,255,0.06);
+        }
+
+        body.dark-theme button {
+            background-color: var(--button-bg);
+            color: var(--text);
+            box-shadow: none;
+            border: none;
+        }
+
+        /* Hover states in dark mode */
+        body.dark-theme button:hover {
+            background-color: var(--button-hover);
+        }
+
+        /* Operators / special buttons adjustments */
+        body.dark-theme .operator {
+            background-color: var(--operator-bg);
+            color: var(--accent-text);
+        }
+
+        body.dark-theme .operator:hover {
+            background-color: var(--operator-hover);
+        }
+
+        body.dark-theme .equals {
+            background-color: var(--equals-bg);
+            color: var(--accent-text);
+        }
+
+        body.dark-theme .equals:hover {
+            background-color: var(--equals-hover);
+        }
+
+        body.dark-theme .clear {
+            background-color: var(--clear-bg);
+            color: var(--accent-text);
+        }
+
+        body.dark-theme .clear:hover {
+            background-color: var(--clear-hover);
+        }
+
+        /* Theme toggle button (place this button in your HTML with class="theme-toggle") */
+        .theme-toggle {
+            position: fixed;
+            top: 16px;
+            right: 16px;
+            z-index: 9999;
+            padding: 8px 12px;
+            border-radius: 20px;
+            background-color: rgba(255,255,255,0.9);
+            color: #111;
+            border: 1px solid rgba(0,0,0,0.08);
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+            font-weight: 600;
+            transition: background-color var(--transition), color var(--transition), transform 120ms ease;
+        }
+
+        .theme-toggle:active {
+            transform: scale(0.98);
+        }
+
+        /* Toggle button appearance in dark mode */
+        body.dark-theme .theme-toggle {
+            background-color: rgba(255,255,255,0.06);
+            color: var(--text);
+            border-color: rgba(255,255,255,0.04);
+            box-shadow: none;
+        }
 
         .calculator {
             border: 1px solid #ccc;
@@ -161,7 +292,7 @@
         }
 
     </script>
-
+    <button class="theme-toggle" onclick="toggleTheme()">Dark Mode</button>
     
 </body>
 </html>
