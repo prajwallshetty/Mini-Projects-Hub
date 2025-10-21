@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUIDANCE</title>
+    <link rel="stylesheet" href="guidance.css">
+</head>
+<body class="body">
+    <div class="instruction-div">
+        <h2 class="instruction-head">INSTRUCTIONS</h2>
+        <ol class="instructions-para">
+            <li>Start the Game: Click the "START GAME" button to begin a new Tic Tac Toe game.</li>
+            <li>Make a Move: Players take turns clicking on an empty cell to place their mark ("X" or "O").</li>
+            <li>Winning Condition: The first player to align three of their marks horizontally, vertically, or diagonally wins the game.</li>
+            <li>Avoid Draw: If the entire board is filled and no player has three in a row, the game is a draw.</li>
+            <li>Scorekeeping: The game keeps track of the score, indicating the number of wins for each player.</li>
+            <li>Challenge Opponent: Play against a friend or challenge yourself against the computer's AI in single-player mode.</li>
+        </ol>        
+        <button class="instruction-back-button">BACK</button>
+        <script>
+            var instructionBackButton = document.querySelector(".instruction-back-button").addEventListener('click',()=>{
+                window.location.href = "index.html";
+            })
+            window.addEventListener("load", () => {
+                const bgm = new Audio("Assets/BGM.mp3");
+                bgm.play();
+                bgm.loop = true;
+
+            })
+        </script>
+    </div>
+</body>
+</html>
