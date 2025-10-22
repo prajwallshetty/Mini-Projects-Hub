@@ -75,6 +75,7 @@ Browse and contribute to projects written in Java, C, and C++. Share your own pr
 - Ensure your code is well-documented and follows best practices.
 - Add comments to explain complex logic.
 - Include a README for your project if applicable.
+- Ensure the project has hacktoberfest tag.
 
 
 ## 🌍 Hacktoberfest Resources
