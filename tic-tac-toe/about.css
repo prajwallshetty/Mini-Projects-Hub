@@ -1,0 +1,308 @@
+
+body{
+    background-color: white;
+    overflow: hidden;
+    color: white;
+    background-color: #ffffff;
+}
+
+.about-div{
+    font-family: sans-serif;
+    margin: 4%;
+    height: 610px;
+    background-color: #C70039;
+    background-size: cover;
+    text-align: left;
+    color: black;
+}
+
+.para-div{
+    background-color: white;
+    margin: 2% 4% 4% 4%;
+    text-align: left;
+    line-height: 200%;
+    font-size: 1.2em;
+    height: 450px;
+    overflow: auto;
+    padding-left: 20px;
+}
+
+.para-div p{
+    overflow: hidden;
+    scrollbar-gutter: stable both-edges; 
+}
+
+.about-head{
+    padding-left: 4%;
+    padding-top: 2%;
+    font-size: 3em;
+    color: white;
+}
+
+.languages-used{
+    padding-left: 4%;
+}
+
+.about-back-button{
+    width: 10%;
+    height: 7%;
+    background-color: #C70039;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    border: 0px black solid;
+    font-weight: bold;
+    position: fixed;
+    left: 79%;
+    bottom: 20%;
+}
+.about-back-button:hover{
+    box-shadow: 2px 3px 2px black;
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s , box-shadow 0.3s;
+}
+
+.para-headings{
+    font-size: 1.3em;
+}
+
+@media all and (max-width: 375px) and (min-width : 320px){
+    .about-div{
+        font-family: sans-serif;
+        margin: 3%;
+        height: 175vw;
+        background-color: #C70039;
+        background-size: cover;
+        text-align: left;
+    
+    }
+    .para-div{
+        background-color: white;
+        margin: 2% 4% 4% 4%;
+        text-align: left;
+        line-height: 200%;
+        height: 380px;
+        font-size: 1em;
+        overflow: auto;
+        padding-left: 10px;
+    }
+    .para-headings{
+        font-size: 1.1em;
+    }
+    .about-back-button{
+        width: 80px;
+        text-align: center;
+        height: 35px;
+        background-color: black;
+        color: white;
+        font-size: 1em;
+        font-weight: bold;
+        position: fixed;
+        left: 67%;
+        bottom: 1.5%;
+    }
+}
+
+
+@media all and (min-width: 375px){
+    .about-head{
+        padding-left: 4%;
+        padding-top: 3%;
+        font-size: 3em;
+    }
+    .about-div{
+        font-family: sans-serif;
+        margin: 3%;
+        height: 170vw;
+        background-color: #C70039;
+        background-size: cover;
+        text-align: left;
+    
+    }
+    .para-div{
+        background-color: white;
+        margin: 2% 4% 4% 4%;
+        text-align: left;
+        line-height: 200%;
+        font-size: 1em;
+        overflow: auto;
+        padding-left: 10px;
+    }
+    .para-headings{
+        font-size: 1.1em;
+    }
+    .about-back-button{
+        width: 80px;
+        text-align: center;
+        height: 35px;
+        background-color: black;
+        color: white;
+        font-size: 1em;
+        font-weight: bold;
+        position: fixed;
+        left: 67%;
+        bottom: 2.3%;
+    }
+}
+
+@media all and (max-width: 456px) and (min-width: 375px){
+    .about-div{
+        font-family: sans-serif;
+        margin: 1%;
+        height: 600px;
+        background-color: #C70039;
+        background-size: cover;
+        text-align: left;
+    
+    }
+    .about-back-button{
+        width: 80px;
+        text-align: center;
+        height: 35px;
+        width: 80px;
+        background-color: black;
+        color: white;
+        font-size: 1em;
+        font-weight: bold;
+        position: fixed;
+        left: 72%;
+        bottom: 3%;
+    }
+    .para-div{
+        background-color: rgb(255, 255, 255);
+        margin: 2% 4% 4% 4%;
+        height: 440px;
+        text-align: left;
+        line-height: 200%;
+        font-size: 1em;
+        overflow: auto;
+        padding-left: 10px;
+    }
+}
+
+ 
+ @media all and (max-width: 768px) and (min-width: 456px){
+    .about-back-button{
+        width: 80px;
+        text-align: center;
+        height: 35px;
+        width: 80px;
+        background-color: black;
+        color: white;
+        font-size: 1em;
+        font-weight: bold;
+        position: fixed;
+        left: 79%;
+        bottom: 10%;
+    }
+    .about-div{
+        font-family: sans-serif;
+        margin: 1%;
+        height: 600px;
+        background-color: #C70039;
+        background-size: cover;
+        text-align: left;
+    
+    }
+} 
+
+ @media all and (max-width: 1024px) and (min-width : 769px){
+    .about-div{
+        font-family: sans-serif;
+        margin: 1%;
+        height: 800px;
+        background-color: #C70039;
+        background-size: cover;
+        text-align: left;
+    
+    }
+    .about-back-button{
+        width: 100px;
+        text-align: center;
+        height: 40px;
+        width: 80px;
+        background-color: #C70039;
+        color: white;
+        font-size: 1em;
+        font-weight: bold;
+        position: fixed;
+        left: 82%;
+        bottom: 10%;
+    }
+    .para-div{
+        background-color: rgb(255, 255, 255);
+        margin: 2% 4% 4% 4%;
+        height: 640px;
+        text-align: left;
+        line-height: 200%;
+        font-size: 1.3em;
+        overflow: auto;
+        padding-left: 10px;
+    }
+}
+@media all and (max-width: 1080px) and (min-width: 1024px) {
+    .about-div{
+        font-family: sans-serif;
+        margin: 1%;
+        height: 750px;
+        background-color: #C70039;
+        background-size: cover;
+        text-align: left;
+    
+    }
+    .about-back-button{
+        width: 80px;
+        text-align: center;
+        height: 35px;
+        width: 80px;
+        background-color: #C70039;
+        color: white;
+        font-size: 1em;
+        font-weight: bold;
+        position: fixed;
+        left: 84%;
+        bottom: 20%;
+    }
+    .para-div{
+        background-color: white;
+         height: 550px;
+        text-align: left;
+        line-height: 200%;
+        font-size: 1.2em;
+        overflow: auto;
+        padding-left: 10px;
+    }
+} 
+
+@media all and (min-width: 1100px){
+    .about-div{
+        font-family: sans-serif;
+        margin: 1%;
+        height: 650px;
+        background-color: #C70039;
+        background-size: cover;
+        text-align: left;
+    
+    }
+    .about-back-button{
+        width: 80px;
+        text-align: center;
+        height: 35px;
+        width: 80px;
+        background-color: #C70039;
+        color: white;
+        font-size: 1em;
+        font-weight: bold;
+        position: fixed;
+        left: 84%;
+        bottom: 20%;
+    }
+    .para-div{
+        background-color: white;
+         height: 450px;
+        text-align: left;
+        line-height: 200%;
+        font-size: 1.2em;
+        overflow: auto;
+        padding-left: 10px;
+    }
+} 
