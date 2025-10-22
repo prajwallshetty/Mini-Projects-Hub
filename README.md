@@ -17,6 +17,7 @@ Whether you're a **beginner** or a **pro**, there’s something valuable for eve
 1️⃣ **Fork the Repository** → Click the **Fork** button (top right).  
 2️⃣ **Clone your Fork** →
 
+Copy the HTTPS clone URL from your fork (click the 'Code' button on GitHub), then run:
 ```bash
 git clone https://github.com/prajwallshetty/Mini-Projects-Hub.git
 ```
