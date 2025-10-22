@@ -68,13 +68,14 @@ Feel free to share your favorite algorithms, data structures, and problem-solvin
 
 ## 🚀 Projects
 
-Browse and contribute to projects written in Java, C, and C++. Share your own projects or help improve existing ones. Projects can range from beginner-friendly to advanced.
+Browse and contribute to projects written in Java, C, C++, HTML, CSS, Javascript. Share your own projects or help improve existing ones. Projects can range from beginner-friendly to advanced.
 
 ## 📜 Guidelines
 
 - Ensure your code is well-documented and follows best practices.
 - Add comments to explain complex logic.
 - Include a README for your project if applicable.
+- Ensure the project has hacktoberfest tag.
 
 
 ## 🌍 Hacktoberfest Resources
